@@ -1,11 +1,11 @@
 # Pixeon Tech Challenge
 
-Your goal will be to build a REST API which is going to be used as part of pixeon’s solution. The API will take control over the healthcare registration as well as the exams ingest. 
+Your goal will be to build a REST API which is going to be used as part of pixeon’s solution. The API will take control over the healthcare institution registration as well as the exams ingest. 
 
 The main resources of your solution should be `Healthcare` and  `Exam`. They are composed by the following properties: 
 
-``Healthcare:  Name, CNPJ``  
-``Exam: Healthcare, PatientName, PatientAge, PatientGender, PhysicianName, PhysicianCRM, ProcedureName``
+``HealthcareInstitution:  Name, CNPJ``  
+``Exam: HealthcareInstitution, PatientName, PatientAge, PatientGender, PhysicianName, PhysicianCRM, ProcedureName``
 
 You have to provide a solution that contains the follow operations: 
 
@@ -17,11 +17,11 @@ You have to provide a solution that contains the follow operations:
 
 ## Functional requirements
 
- * Each new healthcare must receive 20 pixeon coins to save exams and retrieve them.
- * Every exam successfully created must charge 1 pixeon coin from the healthcare's bugdet
- * You must charge 1 pixeon coin from the budget when one Healthcare retrieves an exame but if the institution retrieves the same exame more than once you must not charge it which means you have to charge only the first access to the exam.
- * A healthcare must not have access to an exam that belongs to other healthcare.
- * A healthcare is not allowed to create or get an exam when running out of budget. 
+ * Each new healthcare institution must receive 20 pixeon coins to save exams and retrieve them.
+ * Every exam successfully created must charge 1 pixeon coin from the healthcare institution's bugdet
+ * You must charge 1 pixeon coin from the budget when one healthcare institution retrieves an exame but if the institution retrieves the same exame more than once you must not charge it, which means you have to charge only the first access to the exam.
+ * A healthcare institution must not have access to an exam that belongs to other healthcare institution.
+ * A healthcare institution is not allowed to create or get an exam when running out of budget. 
  * We are expecting you to build the solution using Spring Framework and we also do not care about the database or any other tool that you might choose.
 
 
@@ -41,7 +41,4 @@ A git repo hosted wherever you like but if you prefer just compress the git repo
 
 
 ### Enjoy yourself coding :)
-
-
-
 
