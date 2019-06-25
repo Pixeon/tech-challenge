@@ -2,7 +2,7 @@
 
 Your goal will be to build a REST API which is going to be used as part of pixeon’s solution. The API will take control over the healthcare institution registration as well as the exams ingest. 
 
-The main resources of your solution should be `Healthcare` and  `Exam`. They are composed by the following properties: 
+The main resources of your solution should be `HealthcareInstitution` and  `Exam`. They are composed by the following properties: 
 
 ``HealthcareInstitution:  Name, CNPJ``  
 ``Exam: HealthcareInstitution, PatientName, PatientAge, PatientGender, PhysicianName, PhysicianCRM, ProcedureName``
